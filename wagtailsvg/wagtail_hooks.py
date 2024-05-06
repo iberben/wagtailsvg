@@ -3,7 +3,7 @@ try:
         ModelAdmin,
         modeladmin_register
     )
-except ImportError:
+except (ModuleNotFoundError, ImportError):
     from wagtail_modeladmin.options import (
         ModelAdmin,
         modeladmin_register
